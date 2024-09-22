@@ -1,0 +1,506 @@
+
+<!doctype html><html translate="no"><head><meta charset="UTF-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="description" content=""/><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1,minimum-scale=1,viewport-fit=cover"/><meta name="google" content="notranslate"/><meta http-equiv="Pragma" content="cache"/><meta http-equiv="Cache-control" content="cache"/><meta http-equiv="Cache" content="cache"/><meta http-equiv="window-target" content="_top"/><meta name="format-detection" content="telephone=no"/><meta name="mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black"/><title></title><script src="pwa-1.92.js" defer="defer"></script><style>@keyframes loadings {
+                0% {
+                    background-position: 100% 50%;
+                }
+
+                100% {
+                    background-position: 0 50%;
+                }
+            }
+
+            @media screen {
+            }
+
+            .container {
+                padding: 12px;
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+
+                overflow: hidden;
+                box-sizing: border-box;
+                max-width: unset !important;
+            }
+
+            .bgs {
+                margin-bottom: 10px;
+                background-image: linear-gradient(
+                    90deg,
+                    rgba(120, 120, 120, 0.2) 25%,
+                    rgba(80, 80, 80, 0.24) 37%,
+                    rgba(120, 120, 120, 0.2) 63%
+                );
+                border-radius: 8px;
+                background-size: 400% 100%;
+                animation: loadings 1.4s ease infinite;
+                width: 100%;
+            }
+
+            .flexBox {
+                display: flex;
+                gap: 12px;
+            }
+
+            .flexJus {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .pc-left {
+                padding: 20px;
+                width: 260px;
+                background-color: #05309f;
+                height: 100%;
+                position: fixed;
+            }
+
+            .right {
+                width: calc(100% - 460px);
+                margin: auto;
+                transform: translateX(130px);
+            }
+
+            .pc-header {
+                background-color: #05309f;
+                height: 60px;
+                padding: 10px;
+            }</style><script>!(function (e, t) {
+                'object' == typeof exports && 'object' == typeof module
+                    ? (module.exports = t())
+                    : 'function' == typeof define && define.amd
+                    ? define([], t)
+                    : 'object' == typeof exports
+                    ? (exports.install = t())
+                    : (e.install = t());
+            })(window, function () {
+                return (function (e) {
+                    var t = {};
+                    function n(o) {
+                        if (t[o]) return t[o].exports;
+                        var r = (t[o] = {i: o, l: !1, exports: {}});
+                        return e[o].call(r.exports, r, r.exports, n), (r.l = !0), r.exports;
+                    }
+                    return (
+                        (n.m = e),
+                        (n.c = t),
+                        (n.d = function (e, t, o) {
+                            n.o(e, t) || Object.defineProperty(e, t, {enumerable: !0, get: o});
+                        }),
+                        (n.r = function (e) {
+                            'undefined' != typeof Symbol &&
+                                Symbol.toStringTag &&
+                                Object.defineProperty(e, Symbol.toStringTag, {value: 'Module'}),
+                                Object.defineProperty(e, '__esModule', {value: !0});
+                        }),
+                        (n.t = function (e, t) {
+                            if ((1 & t && (e = n(e)), 8 & t)) return e;
+                            if (4 & t && 'object' == typeof e && e && e.__esModule) return e;
+                            var o = Object.create(null);
+                            if (
+                                (n.r(o),
+                                Object.defineProperty(o, 'default', {enumerable: !0, value: e}),
+                                2 & t && 'string' != typeof e)
+                            )
+                                for (var r in e)
+                                    n.d(
+                                        o,
+                                        r,
+                                        function (t) {
+                                            return e[t];
+                                        }.bind(null, r)
+                                    );
+                            return o;
+                        }),
+                        (n.n = function (e) {
+                            var t =
+                                e && e.__esModule
+                                    ? function () {
+                                          return e.default;
+                                      }
+                                    : function () {
+                                          return e;
+                                      };
+                            return n.d(t, 'a', t), t;
+                        }),
+                        (n.o = function (e, t) {
+                            return Object.prototype.hasOwnProperty.call(e, t);
+                        }),
+                        (n.p = ''),
+                        n((n.s = 0))
+                    );
+                })([
+                    function (e, t, n) {
+                        'use strict';
+                        var o =
+                            (this && this.__spreadArray) ||
+                            function (e, t, n) {
+                                if (n || 2 === arguments.length)
+                                    for (var o, r = 0, i = t.length; r < i; r++)
+                                        (!o && r in t) ||
+                                            (o || (o = Array.prototype.slice.call(t, 0, r)), (o[r] = t[r]));
+                                return e.concat(o || Array.prototype.slice.call(t));
+                            };
+                        Object.defineProperty(t, '__esModule', {value: !0});
+                        var r = function (e, t, n) {
+                            var o,
+                                i = e.createElement('script');
+                            (i.type = 'text/javascript'),
+                                (i.async = !0),
+                                (i.src = t),
+                                n &&
+                                    (i.onerror = function () {
+                                        r(e, n);
+                                    });
+                            var a = e.getElementsByTagName('script')[0];
+                            null === (o = a.parentNode) || void 0 === o || o.insertBefore(i, a);
+                        };
+                        !(function (e, t, n) {
+                            e.KwaiAnalyticsObject = n;
+                            var i = (e[n] = e[n] || []);
+                            i.methods = [
+                                'page',
+                                'track',
+                                'identify',
+                                'instances',
+                                'debug',
+                                'on',
+                                'off',
+                                'once',
+                                'ready',
+                                'alias',
+                                'group',
+                                'enableCookie',
+                                'disableCookie'
+                            ];
+                            var a = function (e, t) {
+                                e[t] = function () {
+                                    for (var n = [], r = 0; r < arguments.length; r++) n[r] = arguments[r];
+                                    var i = o([t], n, !0);
+                                    e.push(i);
+                                };
+                            };
+                            i.methods.forEach(function (e) {
+                                a(i, e);
+                            }),
+                                (i.instance = function (e) {
+                                    var t,
+                                        n = (null === (t = i._i) || void 0 === t ? void 0 : t[e]) || [];
+                                    return (
+                                        i.methods.forEach(function (e) {
+                                            a(n, e);
+                                        }),
+                                        n
+                                    );
+                                }),
+                                (i.load = function (e, o) {
+                                    var a = 'https://s1.kwai.net/kos/s101/nlav11187/pixel/events.js';
+                                    (i._i = i._i || {}),
+                                        (i._i[e] = []),
+                                        (i._i[e]._u = a),
+                                        (i._t = i._t || {}),
+                                        (i._t[e] = +new Date()),
+                                        (i._o = i._o || {}),
+                                        (i._o[e] = o || {});
+                                    var c = '?sdkid='.concat(e, '&lib=').concat(n);
+                                    r(t, a + c, 'https://s16-11187.ap4r.com/kos/s101/nlav11187/pixel/events.js' + c);
+                                });
+                        })(window, document, 'kwaiq');
+                    }
+                ]);
+            });</script><script>!(function (w, d, t) {
+                w.TiktokAnalyticsObject = t;
+                var ttq = (w[t] = w[t] || []);
+                (ttq.methods = [
+                    'page',
+                    'track',
+                    'identify',
+                    'instances',
+                    'debug',
+                    'on',
+                    'off',
+                    'once',
+                    'ready',
+                    'alias',
+                    'group',
+                    'enableCookie',
+                    'disableCookie'
+                ]),
+                    (ttq.setAndDefer = function (t, e) {
+                        t[e] = function () {
+                            t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+                        };
+                    });
+                for (var i = 0; i < ttq.methods.length; i++) ttq.setAndDefer(ttq, ttq.methods[i]);
+                (ttq.instance = function (t) {
+                    for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++)
+                        ttq.setAndDefer(e, ttq.methods[n]);
+                    return e;
+                }),
+                    (ttq.load = function (e, n) {
+                        var i = 'https://analytics.tiktok.com/i18n/pixel/events.js';
+                        (ttq._i = ttq._i || {}),
+                            (ttq._i[e] = []),
+                            (ttq._i[e]._u = i),
+                            (ttq._t = ttq._t || {}),
+                            (ttq._t[e] = +new Date()),
+                            (ttq._o = ttq._o || {}),
+                            (ttq._o[e] = n || {});
+                        var o = document.createElement('script');
+                        (o.type = 'text/javascript'), (o.async = !0), (o.src = i + '?sdkid=' + e + '&lib=' + t);
+                        var a = document.getElementsByTagName('script')[0];
+                        a.parentNode.insertBefore(o, a);
+                    });
+            })(window, document, 'ttq');</script><script>!(function (f, b, e, v, n, t, s) {
+                if (f.fbq) return;
+                n = f.fbq = function () {
+                    n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+                };
+                if (!f._fbq) f._fbq = n;
+                n.push = n;
+                n.loaded = !0;
+                n.version = '2.0';
+                n.queue = [];
+                t = b.createElement(e);
+                t.async = !0;
+                t.src = v;
+                s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s);
+            })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');</script><script>!(function (t, e, a, r, n, s, d, l, o, i, u) {
+                (t.Adjust = t.Adjust || {}), (t.Adjust_q = t.Adjust_q || []);
+                for (var c = 0; c < l.length; c++) o(t.Adjust, t.Adjust_q, l[c]);
+                (i = e.createElement(a)),
+                    (u = e.getElementsByTagName(a)[0]),
+                    (i.async = !0),
+                    (i.src = 'https://cdn.adjust.com/adjust-latest.min.js'),
+                    (i.onload = function () {
+                        for (var e = 0; e < t.Adjust_q.length; e++)
+                            t.Adjust[t.Adjust_q[e][0]].apply(t.Adjust, t.Adjust_q[e][1]);
+                        t.Adjust_q = [];
+                    }),
+                    u.parentNode.insertBefore(i, u);
+            })(
+                window,
+                document,
+                'script',
+                0,
+                0,
+                0,
+                0,
+                [
+                    'initSdk',
+                    'getAttribution',
+                    'getWebUUID',
+                    'setReferrer',
+                    'trackEvent',
+                    'addGlobalCallbackParameters',
+                    'addGlobalPartnerParameters',
+                    'removeGlobalCallbackParameter',
+                    'removeGlobalPartnerParameter',
+                    'clearGlobalCallbackParameters',
+                    'clearGlobalPartnerParameters',
+                    'switchToOfflineMode',
+                    'switchBackToOnlineMode',
+                    'stop',
+                    'restart',
+                    'gdprForgetMe',
+                    'disableThirdPartySharing',
+                    'initSmartBanner',
+                    'showSmartBanner',
+                    'hideSmartBanner'
+                ],
+                function (t, e, a) {
+                    t[a] = function () {
+                        e.push([a, arguments]);
+                    };
+                }
+            );</script><script>function getKsSearch(searchObj) {
+                let serachStr = '';
+                if (searchObj) {
+                    try {
+                        let fh = '?';
+                        for (let key in searchObj) {
+                            serachStr += `${fh}${key}=${searchObj[key]}`;
+                            fh = '&';
+                        }
+                    } catch (error) {}
+                }
+                return serachStr;
+            }
+            function searchToobj(search) {
+                let obj = {};
+                search = search.slice(1);
+                for (let s of search.split('&')) {
+                    let arr = s.split('=');
+                    if (obj[arr[0]] == undefined) {
+                        obj[arr[0]] = arr[1];
+                    } else if (Array.isArray(obj[arr[0]])) {
+                        obj[arr[0]].push(arr[1]);
+                    } else {
+                        let values = [];
+                        values.push(obj[arr[0]]);
+                        values.push(arr[1]);
+                        obj[arr[0]] = values;
+                    }
+                }
+                return obj;
+            }
+
+            function sendChannl(params) {
+                try {
+                    const arr = params.split('&').reduce((sum, item, _index) => {
+                        const sj = item.split('=');
+                        sum[sj[0]] = sj[1];
+                        return sum;
+                    }, {});
+                    localStorage.setItem('appParams', JSON.stringify(arr));
+                } catch (error) {}
+            }
+            // 安卓调用
+            function getPuid(value) {
+                // localStorage.setItem('device', 1)
+                // 如果有存过不执行
+                if (localStorage.getItem('searchObj')) return;
+                if (!!value) {
+                    try {
+                        if (value.toString() == '[object Object]') {
+                            value = JSON.stringify(value);
+                        }
+                        sessionStorage.setItem('searchObj', value);
+                        localStorage.setItem('searchObj', value);
+                        const info = JSON.parse(value);
+                        const {puid, id} = info;
+                        const shareId = puid || id;
+                        window.history.replaceState({}, '', `${location.pathname || '/home'}${getKsSearch(info)}`);
+                        localStorage.setItem('puid', JSON.stringify({value: shareId}));
+                        fetch('/api/config-client/config-client/base/getPixelId?puid=' + shareId, {
+                            headers: {
+                                Tenantsys: document.getElementById('tenantsys').title
+                            }
+                        })
+                            .then((e) => e.text())
+                            .then((rt) => {
+                                try {
+                                    const data = JSON.parse(rt).data;
+                                    const {fbPixelId, ksPixelId, tkPixelId} = data;
+                                    if (fbPixelId) {
+                                        window?.fbq('init', fbPixelId);
+                                        window?.fbq('track', 'PageView');
+                                    }
+                                    if (ksPixelId) {
+                                        window?.kwaiq.load(ksPixelId);
+                                        window?.kwaiq.instance(ksPixelId).track('contentView');
+                                        localStorage.setItem('ksPixelId', JSON.stringify({value: ksPixelId}));
+                                    }
+                                    if (tkPixelId) {
+                                        window?.ttq.load(tkPixelId);
+                                        window?.ttq.page();
+                                        setTimeout(() => {
+                                            const fun =
+                                                window?.ttq.instances(tkPixelId)?.[0] ||
+                                                window?.ttq.instances(tkPixelId);
+                                            fun && fun.track('ViewContent', {content_id: shareId});
+                                            localStorage.setItem('ksPixelId', JSON.stringify({value: tkPixelId}));
+                                        }, 1000);
+                                    }
+                                } catch (error) {}
+                            });
+                    } catch (error) {}
+                }
+            }
+            // 如果有存就直接拼接
+            if (localStorage.getItem('searchObj')) {
+                try {
+                    let objStr = localStorage.getItem('searchObj');
+                    sessionStorage.setItem('searchObj', objStr);
+                    let obj = JSON.parse(objStr);
+                    window.history.replaceState({}, '', `${location.pathname || '/home'}${getKsSearch(obj)}`);
+                } catch (error) {}
+            }
+
+            if (location.pathname == '/' && location.search) {
+                try {
+                    let obj = searchToobj(location.search);
+                    if (obj.id || obj.puid) {
+                        localStorage.setItem('puid', JSON.stringify({value: obj.id || obj.puid}));
+                    }
+                    sessionStorage.setItem('searchObj', JSON.stringify(obj));
+                } catch (error) {}
+            }
+            try {
+                const search = location.search;
+                if (search && search.indexOf('refer=') != -1) {
+                    const isLongUrl = search.indexOf('link_end') != -1;
+                    let refer = search.split('refer=')[1];
+                    if (isLongUrl) {
+                        refer = refer.split('link_end')[0];
+                    } else {
+                        refer = refer.split('&')[0];
+                    }
+                    const obj = searchToobj(
+                        decodeURIComponent(search.replace(`&refer=${refer}`, '').replace('link_end', ''))
+                    );
+
+                    const href = `${refer.indexOf('http') != -1 ? '' : 'https://'}${decodeURIComponent(refer)}${
+                        isLongUrl ? '&' : '?'
+                    }${location.href.indexOf('adjust') != -1 ? 'label' : 'deep_link_value'}=${encodeURIComponent(
+                        JSON.stringify(obj)
+                    )}`;
+                    location.href = href;
+                }
+            } catch (error) {}</script><script src="https://d192w9wjeja983.cloudfront.net/logsdk.js"></script><link rel="icon" href="/favicon.ico"><script defer="defer" src="/js/lang.b6e5ae42.js"></script><script defer="defer" src="/js/commons-cdd60c62.b6e5ae42.js"></script><script defer="defer" src="/js/commons-bb3d84b5.b6e5ae42.js"></script><script defer="defer" src="/js/app.b6e5ae42.js"></script><link href="/css/commons-cdd60c62.b6e5ae42.css" rel="stylesheet"><link href="/css/commons-bb3d84b5.b6e5ae42.css" rel="stylesheet"><link href="/css/app.b6e5ae42.css" rel="stylesheet"><link as="style" href="/css/177.b6e5ae42.css" rel="preload"><link as="script" href="/js/home.b6e5ae42.js" rel="preload"><link href="/css/783.b6e5ae42.css" rel="prefetch"><link href="/js/GameDetail.b6e5ae42.js" rel="prefetch"></head><body><div style="height: 0; overflow: hidden; opacity: 0; position: absolute"><input/> <input type="password"/></div><div id="root" style="position: relative"></div><div style="background: #033d31" class="container animate" id="containerBox"><div id="mobileBox"><div class="bgs" style="height: 30px"></div><div class="bgs" style="height: 1px"></div><div class="bgs" style="height: 100px"></div><div class="flexBox"><div class="bgs" style="height: 40px"></div><div class="bgs" style="height: 40px"></div><div class="bgs" style="height: 40px"></div><div class="bgs" style="height: 40px"></div><div class="bgs" style="height: 40px"></div></div><div class="bgs" style="height: 1px"></div><div class="flexJus"><div class="bgs" style="height: 20px; width: 80px"></div><div class="bgs" style="height: 20px; width: 100px"></div></div><div class="flexBox"><div class="bgs" style="height: 160px"></div><div class="bgs" style="height: 160px"></div><div class="bgs" style="height: 160px"></div></div><div class="flexBox"><div class="bgs" style="height: 160px"></div><div class="bgs" style="height: 160px"></div><div class="bgs" style="height: 160px"></div></div><div class="flexBox"><div class="bgs" style="height: 160px"></div><div class="bgs" style="height: 160px"></div><div class="bgs" style="height: 160px"></div></div><div class="flexJus"><div class="bgs" style="height: 20px; width: 80px"></div><div class="bgs" style="height: 20px; width: 100px"></div></div><div class="flexBox"><div class="bgs" style="height: 160px"></div><div class="bgs" style="height: 160px"></div><div class="bgs" style="height: 160px"></div></div></div></div><div style="display: none" id="tenantsys" title="216net"></div></body><script>document.ready = function (callback) {
+            ///兼容FF,Google
+            if (document.addEventListener) {
+                document.addEventListener(
+                    'DOMContentLoaded',
+                    function () {
+                        document.removeEventListener('DOMContentLoaded', arguments.callee, false);
+                        callback();
+                    },
+                    false
+                );
+            }
+            //兼容IE
+            else if (document.attachEvent) {
+                document.attachEvent('onreadystatechange', function () {
+                    if (document.readyState == 'complete') {
+                        document.detachEvent('onreadystatechange', arguments.callee);
+                        callback();
+                    }
+                });
+            } else if (document.lastChild == document.body) {
+                callback();
+            }
+            // 如果都不生效就onload
+            else if (window.onload) {
+                window.onload = callback;
+            } else {
+                callback();
+            }
+        };
+        if (location.href.indexOf('/download') != -1) {
+            let dom = document.getElementById('containerBox');
+            if (dom) dom.remove();
+        }
+        document.ready(() => {
+            let dom = document.getElementById('containerBox');
+            if (dom) dom.remove();
+            window.webkit?.messageHandlers?.onReady?.postMessage('');
+            const {href, port} = window.location;
+            if (!port && href.indexOf('https') == -1 && href.indexOf('localhost') == -1) {
+                window.location.href = href.replace('http', 'https');
+            }
+        });</script><script src="/cstaticdun.min.js"></script><script src="/svga.min.js"></script><script src="/webPushSdk.produce.min.2.1.8.js"></script><script>window.addEventListener('load', () => {
+            if ('serviceWorker' in navigator) {
+                // 由于 127.0.0.1:8000 是所有测试 Demo 的 host
+                // 为了防止作用域污染，将安装前注销所有已生效的 Service Worker
+                navigator.serviceWorker.getRegistrations().then((regs) => {
+                    for (let reg of regs) {
+                        reg.unregister();
+                    }
+                    navigator.serviceWorker.register('/sw.produce.min.2.1.8.js');
+                });
+            }
+        });</script></html>
